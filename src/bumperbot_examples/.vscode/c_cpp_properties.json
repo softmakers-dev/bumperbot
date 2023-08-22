@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/softmaker/workspace_ros/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/softmaker/bumperbot_ws/src/bumperbot_examples/include/**",
+        "/home/softmaker/workspace_ros/src/FleetManagementSystem/fms_core/include/**",
+        "/home/softmaker/workspace_ros/src/FleetManagementSystem/fms_ctrl/include/**",
+        "/home/softmaker/workspace_ros/src/my_robot_msgs/include/**",
+        "/home/softmaker/workspace_ros/src/my_robot_tutorials/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-arm64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
