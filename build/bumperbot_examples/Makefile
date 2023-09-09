@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/softmaker/bumperbot_ws/src
+CMAKE_SOURCE_DIR = /home/softmaker/bumperbot_ws/bumperbot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/softmaker/bumperbot_ws/build
+CMAKE_BINARY_DIR = /home/softmaker/bumperbot_ws/bumperbot/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/softmaker/bumperbot_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/softmaker/bumperbot_ws/build/CMakeFiles /home/softmaker/bumperbot_ws/build/bumperbot_examples/CMakeFiles/progress.marks
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/softmaker/bumperbot_ws/build/CMakeFiles 0
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/softmaker/bumperbot_ws/bumperbot/build/CMakeFiles /home/softmaker/bumperbot_ws/bumperbot/build/bumperbot_examples/CMakeFiles/progress.marks
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/softmaker/bumperbot_ws/bumperbot/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/clean
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,37 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/preinstall
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/preinstall
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/softmaker/bumperbot_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-bumperbot_examples/CMakeFiles/simple_cpp_publisher.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/simple_cpp_publisher.dir/rule
-.PHONY : bumperbot_examples/CMakeFiles/simple_cpp_publisher.dir/rule
-
-# Convenience name for target.
-simple_cpp_publisher: bumperbot_examples/CMakeFiles/simple_cpp_publisher.dir/rule
-
-.PHONY : simple_cpp_publisher
-
-# fast build rule for target.
-simple_cpp_publisher/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/simple_cpp_publisher.dir/build.make bumperbot_examples/CMakeFiles/simple_cpp_publisher.dir/build
-.PHONY : simple_cpp_publisher/fast
-
-# Convenience name for target.
 bumperbot_examples/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : bumperbot_examples/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -194,12 +179,12 @@ std_msgs_generate_messages_py: bumperbot_examples/CMakeFiles/std_msgs_generate_m
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/std_msgs_generate_messages_py.dir/build.make bumperbot_examples/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f bumperbot_examples/CMakeFiles/std_msgs_generate_messages_py.dir/build.make bumperbot_examples/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 bumperbot_examples/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : bumperbot_examples/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -209,12 +194,12 @@ std_msgs_generate_messages_nodejs: bumperbot_examples/CMakeFiles/std_msgs_genera
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make bumperbot_examples/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f bumperbot_examples/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make bumperbot_examples/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 bumperbot_examples/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : bumperbot_examples/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -224,12 +209,12 @@ roscpp_generate_messages_cpp: bumperbot_examples/CMakeFiles/roscpp_generate_mess
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make bumperbot_examples/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f bumperbot_examples/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make bumperbot_examples/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 bumperbot_examples/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : bumperbot_examples/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -239,12 +224,12 @@ roscpp_generate_messages_eus: bumperbot_examples/CMakeFiles/roscpp_generate_mess
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/roscpp_generate_messages_eus.dir/build.make bumperbot_examples/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f bumperbot_examples/CMakeFiles/roscpp_generate_messages_eus.dir/build.make bumperbot_examples/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -254,12 +239,12 @@ rosgraph_msgs_generate_messages_nodejs: bumperbot_examples/CMakeFiles/rosgraph_m
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 bumperbot_examples/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : bumperbot_examples/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -269,12 +254,12 @@ std_msgs_generate_messages_lisp: bumperbot_examples/CMakeFiles/std_msgs_generate
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make bumperbot_examples/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f bumperbot_examples/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make bumperbot_examples/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 bumperbot_examples/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : bumperbot_examples/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -284,12 +269,12 @@ roscpp_generate_messages_py: bumperbot_examples/CMakeFiles/roscpp_generate_messa
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/roscpp_generate_messages_py.dir/build.make bumperbot_examples/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f bumperbot_examples/CMakeFiles/roscpp_generate_messages_py.dir/build.make bumperbot_examples/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 bumperbot_examples/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 .PHONY : bumperbot_examples/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -299,12 +284,12 @@ std_msgs_generate_messages_eus: bumperbot_examples/CMakeFiles/std_msgs_generate_
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make bumperbot_examples/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f bumperbot_examples/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make bumperbot_examples/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 bumperbot_examples/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : bumperbot_examples/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -314,12 +299,12 @@ roscpp_generate_messages_nodejs: bumperbot_examples/CMakeFiles/roscpp_generate_m
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make bumperbot_examples/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f bumperbot_examples/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make bumperbot_examples/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -329,12 +314,12 @@ rosgraph_msgs_generate_messages_cpp: bumperbot_examples/CMakeFiles/rosgraph_msgs
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 bumperbot_examples/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : bumperbot_examples/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -344,12 +329,12 @@ std_msgs_generate_messages_cpp: bumperbot_examples/CMakeFiles/std_msgs_generate_
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make bumperbot_examples/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f bumperbot_examples/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make bumperbot_examples/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -359,12 +344,12 @@ rosgraph_msgs_generate_messages_eus: bumperbot_examples/CMakeFiles/rosgraph_msgs
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -374,12 +359,12 @@ rosgraph_msgs_generate_messages_lisp: bumperbot_examples/CMakeFiles/rosgraph_msg
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 bumperbot_examples/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : bumperbot_examples/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -389,12 +374,12 @@ roscpp_generate_messages_lisp: bumperbot_examples/CMakeFiles/roscpp_generate_mes
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make bumperbot_examples/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f bumperbot_examples/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make bumperbot_examples/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f CMakeFiles/Makefile2 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -404,35 +389,8 @@ rosgraph_msgs_generate_messages_py: bumperbot_examples/CMakeFiles/rosgraph_msgs_
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(MAKE) -f bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
-
-nodes/simple_publisher.o: nodes/simple_publisher.cpp.o
-
-.PHONY : nodes/simple_publisher.o
-
-# target to build an object file
-nodes/simple_publisher.cpp.o:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/simple_cpp_publisher.dir/build.make bumperbot_examples/CMakeFiles/simple_cpp_publisher.dir/nodes/simple_publisher.cpp.o
-.PHONY : nodes/simple_publisher.cpp.o
-
-nodes/simple_publisher.i: nodes/simple_publisher.cpp.i
-
-.PHONY : nodes/simple_publisher.i
-
-# target to preprocess a source file
-nodes/simple_publisher.cpp.i:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/simple_cpp_publisher.dir/build.make bumperbot_examples/CMakeFiles/simple_cpp_publisher.dir/nodes/simple_publisher.cpp.i
-.PHONY : nodes/simple_publisher.cpp.i
-
-nodes/simple_publisher.s: nodes/simple_publisher.cpp.s
-
-.PHONY : nodes/simple_publisher.s
-
-# target to generate assembly for a file
-nodes/simple_publisher.cpp.s:
-	cd /home/softmaker/bumperbot_ws/build && $(MAKE) -f bumperbot_examples/CMakeFiles/simple_cpp_publisher.dir/build.make bumperbot_examples/CMakeFiles/simple_cpp_publisher.dir/nodes/simple_publisher.cpp.s
-.PHONY : nodes/simple_publisher.cpp.s
 
 # Help Target
 help:
@@ -444,7 +402,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... simple_cpp_publisher"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
@@ -463,9 +420,6 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... nodes/simple_publisher.o"
-	@echo "... nodes/simple_publisher.i"
-	@echo "... nodes/simple_publisher.s"
 .PHONY : help
 
 
@@ -477,6 +431,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/softmaker/bumperbot_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

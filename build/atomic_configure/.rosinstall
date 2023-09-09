@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/softmaker/bumperbot_ws/devel/setup.sh
+    local-name: /home/softmaker/bumperbot_ws/bumperbot/devel/setup.sh

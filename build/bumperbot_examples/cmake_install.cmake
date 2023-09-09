@@ -1,8 +1,8 @@
-# Install script for directory: /home/softmaker/bumperbot_ws/src/bumperbot_examples
+# Install script for directory: /home/softmaker/bumperbot_ws/bumperbot/src/bumperbot_examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/softmaker/bumperbot_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/softmaker/bumperbot_ws/bumperbot/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/softmaker/bumperbot_ws/build/bumperbot_examples/catkin_generated/installspace/bumperbot_examples.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/softmaker/bumperbot_ws/bumperbot/build/bumperbot_examples/catkin_generated/installspace/bumperbot_examples.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bumperbot_examples/cmake" TYPE FILE FILES
-    "/home/softmaker/bumperbot_ws/build/bumperbot_examples/catkin_generated/installspace/bumperbot_examplesConfig.cmake"
-    "/home/softmaker/bumperbot_ws/build/bumperbot_examples/catkin_generated/installspace/bumperbot_examplesConfig-version.cmake"
+    "/home/softmaker/bumperbot_ws/bumperbot/build/bumperbot_examples/catkin_generated/installspace/bumperbot_examplesConfig.cmake"
+    "/home/softmaker/bumperbot_ws/bumperbot/build/bumperbot_examples/catkin_generated/installspace/bumperbot_examplesConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bumperbot_examples" TYPE FILE FILES "/home/softmaker/bumperbot_ws/src/bumperbot_examples/package.xml")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/$(CATKIN_PACKAGE_BIN_DESTINATION)" TYPE PROGRAM FILES "/home/softmaker/bumperbot_ws/build/bumperbot_examples/catkin_generated/installspace/simple_publisher.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bumperbot_examples" TYPE FILE FILES "/home/softmaker/bumperbot_ws/bumperbot/src/bumperbot_examples/package.xml")
 endif()
 

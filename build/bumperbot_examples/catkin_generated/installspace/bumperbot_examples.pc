@@ -1,4 +1,4 @@
-prefix=/home/softmaker/bumperbot_ws/install
+prefix=/home/softmaker/bumperbot_ws/bumperbot/install
 
 Name: bumperbot_examples
 Description: Description of bumperbot_examples

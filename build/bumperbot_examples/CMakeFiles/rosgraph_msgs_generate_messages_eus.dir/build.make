@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/softmaker/bumperbot_ws/src
+CMAKE_SOURCE_DIR = /home/softmaker/bumperbot_ws/bumperbot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/softmaker/bumperbot_ws/build
+CMAKE_BINARY_DIR = /home/softmaker/bumperbot_ws/bumperbot/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build: ros
 .PHONY : bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 
 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	cd /home/softmaker/bumperbot_ws/build/bumperbot_examples && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/softmaker/bumperbot_ws/bumperbot/build/bumperbot_examples && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 
 bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend:
-	cd /home/softmaker/bumperbot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/softmaker/bumperbot_ws/src /home/softmaker/bumperbot_ws/src/bumperbot_examples /home/softmaker/bumperbot_ws/build /home/softmaker/bumperbot_ws/build/bumperbot_examples /home/softmaker/bumperbot_ws/build/bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/softmaker/bumperbot_ws/bumperbot/src /home/softmaker/bumperbot_ws/bumperbot/src/bumperbot_examples /home/softmaker/bumperbot_ws/bumperbot/build /home/softmaker/bumperbot_ws/bumperbot/build/bumperbot_examples /home/softmaker/bumperbot_ws/bumperbot/build/bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : bumperbot_examples/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
 

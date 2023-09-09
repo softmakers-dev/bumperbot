@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/softmaker/bumperbot_ws/src
+CMAKE_SOURCE_DIR = /home/softmaker/bumperbot_ws/bumperbot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/softmaker/bumperbot_ws/build
+CMAKE_BINARY_DIR = /home/softmaker/bumperbot_ws/bumperbot/build
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/softmaker/bumperbot_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/softmaker/bumperbot_ws/src /home/softmaker/bumperbot_ws/src /home/softmaker/bumperbot_ws/build /home/softmaker/bumperbot_ws/build /home/softmaker/bumperbot_ws/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/softmaker/bumperbot_ws/bumperbot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/softmaker/bumperbot_ws/bumperbot/src /home/softmaker/bumperbot_ws/bumperbot/src /home/softmaker/bumperbot_ws/bumperbot/build /home/softmaker/bumperbot_ws/bumperbot/build /home/softmaker/bumperbot_ws/bumperbot/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

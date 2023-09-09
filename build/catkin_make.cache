@@ -1,2 +1,2 @@
-bumperbot_examples
--DCATKIN_DEVEL_PREFIX=/home/softmaker/bumperbot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/softmaker/bumperbot_ws/install -G Unix Makefiles
+bumperbot_description
+-DCATKIN_DEVEL_PREFIX=/home/softmaker/bumperbot_ws/bumperbot/devel -DCMAKE_INSTALL_PREFIX=/home/softmaker/bumperbot_ws/bumperbot/install -DCATKIN_WHITELIST_PACKAGES=bumperbot_description -G Unix Makefiles

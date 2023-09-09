@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "bumperbot_examples")
 set(bumperbot_examples_VERSION "0.0.0")
-set(bumperbot_examples_MAINTAINER "softmaker <softmaker@todo.todo>")
+set(bumperbot_examples_MAINTAINER "hills001 <hills001@todo.todo>")
 set(bumperbot_examples_PACKAGE_FORMAT "2")
 set(bumperbot_examples_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
 set(bumperbot_examples_BUILD_EXPORT_DEPENDS "roscpp" "rospy" "std_msgs")
